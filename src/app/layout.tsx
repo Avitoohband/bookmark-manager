@@ -27,10 +27,12 @@ export default function RootLayout({
               style={{ display: "flex", gap: "15px", alignContent: "center" }}
             >
               <SignedOut>
-                <SignInButton />
+                <SignInButton>
                 <button className="btn btn-primary">Sign In</button>
-                <SignUpButton />
+                </SignInButton>                
+                <SignUpButton>
                 <button className="btn btn-primary">Sign Up</button>
+                </SignUpButton>
               </SignedOut>
               <SignedIn>
                 <UserButton />
